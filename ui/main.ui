@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="mainFrame">
+    <layout manager="grid">
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+
+    <child>
+      <object class="ttk.Frame">
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="rowspan">2</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="sticky">n</property>
+        </layout>
+
+        <child>
+          <object class="ttk.Label" id="labelRulerFootHeight">
+            <property name="width">20</property>
+            <property name="text">Độ cao chân thước:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="pady">5</property>
+              <!-- <property name="anchor">center</property> -->
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="txtRulerFootHeight">
+            <property name="width">16</property>
+            <property name="text">0</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="pady">5</property>
+              <property name="sticky"></property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Label" id="labelRulerHeight">
+            <property name="width">20</property>
+            <property name="text">Độ dài thước:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="txtRulerHeight">
+            <property name="width">16</property>
+            <property name="text">100</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Label" id="labelThreeLinesHeight">
+            <property name="width">20</property>
+            <property name="text">Độ dài mức thước:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="txtThreeLinesHeight">
+            <property name="width">16</property>
+            <property name="text">5</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Button" id="btnOpenFile">
+            <property name="text" translatable="yes">Chọn file</property>
+            <property name="width">13</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Button" id="btnDetectWaterLevel">
+            <property name="text" translatable="yes">Phát hiện mực nước</property>
+            <property name="width">20</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Button" id="btnQuit">
+            <property name="text" translatable="yes">Thoát</property>
+            <property name="width">13</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">9</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Label">
+            <property name="text" translatable="yes">Mực nước hiện tại:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="lblWaterLevel">
+            <property name="font">systemAlertHeaderFont</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">11</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+
+    <child>
+      <object class="tk.Canvas" id="canvas">
+        <property name="background">#6cb1ff</property>
+        <property name="height">400</property>
+        <property name="width">400</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
